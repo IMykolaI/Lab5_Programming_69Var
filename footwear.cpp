@@ -3,27 +3,27 @@
 Footwear::Footwear()
 {
 	cout << "Defining..." << endl;
-	name = "Unknown";
-	model = "Unknown";
-	matherial = "Unknown";
-	size = "Unknown";
-	color = "Unknown";
-	price = 999;
-	discount = 3;
-	gender = "Unknown";
+	brandName = "Unknown";
+	modelOfFootwear = "Unknown";
+	matherialOfFootwear = "Unknown";
+	sizeOfFootwear = "Unknown";
+	colorOfFootwear = "Unknown";
+	priceOfFootwear = 999;
+	discountOnFootwear = 3;
+	genderOfBuyer = "Unknown";
 }
 
-Footwear::Footwear(string name, string model, string gender, string matherial, string size, string color, double price, int discount)
+Footwear::Footwear(string brandNameIn, string modelOfFootwearIn, string genderOfBuyerIn, string matherialOfFootwearIn, string sizeOfFootwearIn, string colorOfFootwearIn, double priceOfFootwearIn, int discountOnFootwearIn)
 {
 	cout << "Defining..." << endl;
-	setName(name);
-	setSize(size);
-	setColor(color);
-	setPrice(price);
-	setMatherial(matherial);
-	setModel(model);
-	setGender(gender);
-	setDiscount(discount);
+	setBrandName(brandNameIn);
+	setSizeOfFootwear(sizeOfFootwearIn);
+	setColorOfFootwear(colorOfFootwearIn);
+	setPriceOfFootwear(priceOfFootwearIn);
+	setMatherialOfFootwear(matherialOfFootwearIn);
+	setModelOfFootwear(modelOfFootwearIn);
+	setGenderOfBuyer(genderOfBuyerIn);
+	setDiscountOnFootwear(discountOnFootwearIn);
 }
 
 Footwear::~Footwear()
@@ -31,82 +31,82 @@ Footwear::~Footwear()
 	cout << "Clearing data..." << "\n" << endl;
 }
 //sets
-void Footwear::setGender(string genderIn)
+void Footwear::setGenderOfBuyer(string genderOfBuyerIn)
 {
-	gender = genderIn;
+	genderOfBuyer = genderOfBuyerIn;
 }
 
-void Footwear::setDiscount(int discountIn)
+void Footwear::setDiscountOnFootwear(int discountOnFootwearIn)
 {
-	discount = discountIn;
+	discountOnFootwear = discountOnFootwearIn;
 }
 
-void Footwear::setName(string nameIn)
+void Footwear::setBrandName(string brandNameIn)
 {
-	name = nameIn;
+	brandName = brandNameIn;
 }
 
-void Footwear::setSize(string sizeIn)
+void Footwear::setSizeOfFootwear(string sizeOfFootwearIn)
 {
-	size = sizeIn;
+	sizeOfFootwear = sizeOfFootwearIn;
 }
 
-void Footwear::setColor(string colorIn)
+void Footwear::setColorOfFootwear(string colorOfFootwearIn)
 {
-	color = colorIn;
+	colorOfFootwear = colorOfFootwearIn;
 }
 
-void Footwear::setPrice(double priceIn)
+void Footwear::setPriceOfFootwear(double priceOfFootwearIn)
 {
-	price = priceIn;
+	priceOfFootwear = priceOfFootwearIn;
 }
 
-void Footwear::setMatherial(string matherialIn)
+void Footwear::setMatherialOfFootwear(string matherialOfFootwearIn)
 {
-	matherial = matherialIn;
+	matherialOfFootwear = matherialOfFootwearIn;
 }
 
-void Footwear::setModel(string modelIn)
+void Footwear::setModelOfFootwear(string modelOfFootwearIn)
 {
-	model = modelIn;
+	modelOfFootwear = modelOfFootwearIn;
 }
 //gets
-double Footwear::getPrice()
+const double Footwear::getPriceOfFootwear()
 {
-	return price;
+	return priceOfFootwear;
 }
 
-string Footwear::getMatherial()
+const string Footwear::getMatherialOfFootwear()
 {
-	return matherial;
+	return matherialOfFootwear;
 }
 
-string Footwear::getModel()
+const string Footwear::getModelOfFootwear()
 {
-	return model;
+	return modelOfFootwear;
 }
 
-string Footwear::getName()
+const string Footwear::getBrandName()
 {
-	return name;
+	return brandName;
 }
 
-string Footwear::getColor()
+const string Footwear::getColorOfFootwear()
 {
-	return color;
+	return colorOfFootwear;
 }
 
-string Footwear::getSize()
+const string Footwear::getSizeOfFootwear()
 {
-	return size;
+	return sizeOfFootwear;
 }
 
-string Footwear::getGender()
+const string Footwear::getGenderOfBuyer()
 {
-	return gender;
+	return genderOfBuyer;
 }
 
-int Footwear::getDiscount()
+const int Footwear::getDiscountOnFootwear()
 {
-	return discount;
+	return discountOnFootwear;
 }
