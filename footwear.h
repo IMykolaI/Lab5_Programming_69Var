@@ -12,37 +12,37 @@ using namespace std;
 class Footwear
 {
 private:
-	string name;
-	string size;
-	string color;
-	double price;
+	string brandName;
+	string sizeOfFootwear;
+	string colorOfFootwear;
+	double priceOfFootwear;
 protected:
-	string matherial;
-	string model;
+	string matherialOfFootwear;
+	string modelOfFootwear;
 public:
 	Footwear();
-	Footwear(string name, string model, string gender, string matherial, string size, string color, double price, int discount);
+	Footwear(string brandNameIn, string modelOfFootwearIn, string genderOfBuyerIn, string matherialOfFootwearIn, string sizeOfFootwearIn, string colorOfFootwearIn, double priceOfFootwearIn, int discountOnFootwear);
 	~Footwear();
 	//specific
-	int discount;
-	string gender;
+	int discountOnFootwear;
+	string genderOfBuyer;
 	//sets
-	void setName(string nameIn);
-	void setSize(string sizeIn);
-	void setColor(string colorIn);
-	void setPrice(double priceIn);
-	void setMatherial(string matherialIn);
-	void setModel(string modelIn);
-	void setGender(string genderIn);
-	void setDiscount(int discountIn);
+	void setBrandName(string brandNameIn);
+	void setSizeOfFootwear(string sizeOfFootwearIn);
+	void setColorOfFootwear(string colorOfFootwearIn);
+	void setPriceOfFootwear(double priceOfFootwearIn);
+	void setMatherialOfFootwear(string matherialOfFootwearIn);
+	void setModelOfFootwear(string modelOfFootwearIn);
+	void setGenderOfBuyer(string genderOfBuyerIn);
+	void setDiscountOnFootwear(int discountOnFootwearIn);
 	//gets
-	double getPrice();
-	string getMatherial();
-	string getModel();
-	string getName();
-	string getColor();
-	string getSize();
-	string getGender();
-	int getDiscount();
+	const double getPriceOfFootwear();
+	const string getMatherialOfFootwear();
+	const string getModelOfFootwear();
+	const string getBrandName();
+	const string getColorOfFootwear();
+	const string getSizeOfFootwear();
+	const string getGenderOfBuyer();
+	const int getDiscountOnFootwear();
 };
 #endif FOOTWEAR_H
